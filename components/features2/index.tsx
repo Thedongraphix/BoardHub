@@ -28,9 +28,9 @@ export const Features2 = () => {
          >
             <Flex direction="column" align={'center'}>
                <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
+                  Enhanced Governance
                </Text>
-               <Text h3>Your title here</Text>
+               <Text h3>Advanced Board Management Features</Text>
                <Text
                   span
                   css={{
@@ -38,10 +38,7 @@ export const Features2 = () => {
                      color: '$accents8',
                   }}
                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec tincidunt nisl lorem eu nunc. Sed euismod, nisl ut aliquam
-                  lacinia,
+                  BoardHub provides powerful tools to help your organization maintain compliance and elevate governance standards.
                </Text>
 
                <Flex
@@ -60,7 +57,7 @@ export const Features2 = () => {
                      <BoxIcon />
                      <Flex direction={'column'}>
                         <Text h4 weight={'medium'}>
-                           Your title here
+                           Meeting Minutes
                         </Text>
                         <Text
                            span
@@ -69,9 +66,7 @@ export const Features2 = () => {
                               color: '$accents8',
                            }}
                         >
-                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                           elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                           nisl aliquet nisl,
+                           Automated minutes creation with approval workflows
                         </Text>
                      </Flex>
                   </Flex>
@@ -84,7 +79,7 @@ export const Features2 = () => {
                      <BoxIcon />
                      <Flex direction={'column'}>
                         <Text h4 weight={'medium'}>
-                           Your title here
+                           Advanced Security
                         </Text>
                         <Text
                            span
@@ -93,9 +88,7 @@ export const Features2 = () => {
                               color: '$accents8',
                            }}
                         >
-                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                           elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                           nisl aliquet nisl,
+                           Enterprise-grade encryption and access controls
                         </Text>
                      </Flex>
                   </Flex>

@@ -22,9 +22,9 @@ export const Features3 = () => {
                }}
             >
                <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
+                  Complete Solution
                </Text>
-               <Text h3>Your title here</Text>
+               <Text h3>Comprehensive Governance Platform</Text>
                <Text
                   span
                   css={{
@@ -33,9 +33,7 @@ export const Features3 = () => {
                      textAlign: 'center',
                   }}
                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec
+                  BoardHub delivers a complete set of governance tools that help organizations run more effective board meetings
                </Text>
             </Flex>
             <Flex
@@ -52,11 +50,9 @@ export const Features3 = () => {
                      <Flex css={{gap: '0.5rem'}}>
                         <BoxIcon />
                         <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
+                           <Text h5>Collaboration Tools</Text>
                            <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
+                              Secure messaging and document annotation features for improved board member collaboration
                            </Text>
                         </Flex>
                      </Flex>
@@ -67,11 +63,9 @@ export const Features3 = () => {
                      <Flex css={{gap: '0.5rem'}}>
                         <BoxIcon />
                         <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
+                           <Text h5>Compliance Management</Text>
                            <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
+                              Automated compliance tracking and reporting to simplify regulatory requirements
                            </Text>
                         </Flex>
                      </Flex>
@@ -92,11 +86,9 @@ export const Features3 = () => {
                      <Flex css={{gap: '0.5rem'}}>
                         <BoxIcon />
                         <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
+                           <Text h5>Document Management</Text>
                            <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
+                              Centralized repository with versioning control for all board materials and documents
                            </Text>
                         </Flex>
                      </Flex>
@@ -107,11 +99,9 @@ export const Features3 = () => {
                      <Flex css={{gap: '0.5rem'}}>
                         <BoxIcon />
                         <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
+                           <Text h5>Analytics Dashboard</Text>
                            <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
+                              Real-time governance metrics and analytics to track board performance and effectiveness
                            </Text>
                         </Flex>
                      </Flex>

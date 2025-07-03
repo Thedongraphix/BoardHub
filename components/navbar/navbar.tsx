@@ -12,10 +12,10 @@ export const Nav = () => {
    const {isDark, type} = useTheme();
    const collapseItems = [
       'Features',
-      'Customers',
+      'Solutions',
       'Pricing',
-      'Company',
-      'Legal',
+      'About Us',
+      'Contact',
    ];
    return (
       <Navbar
@@ -32,7 +32,7 @@ export const Nav = () => {
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
             <AcmeLogo />
             <Text b color="inherit" hideIn="xs">
-               ACME
+               BoardHub
             </Text>
             <Navbar.Content
                hideIn="sm"
@@ -57,7 +57,7 @@ export const Nav = () => {
                      </Dropdown.Button>
                   </Navbar.Item>
                   <Dropdown.Menu
-                     aria-label="ACME features"
+                     aria-label="BoardHub features"
                      css={{
                         '$$dropdownMenuWidth': '340px',
                         '$$dropdownItemHeight': '70px',
@@ -75,52 +75,52 @@ export const Nav = () => {
                      }}
                   >
                      <Dropdown.Item
-                        key="autoscaling"
+                        key="agenda_management"
                         showFullDescription
-                        description="ACME scales apps to meet user demand, automagically, based on load."
+                        description="Create and manage meeting agendas with automated time tracking."
                         icon={icons.scale}
                      >
-                        Autoscaling
+                        Agenda Management
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="usage_metrics"
+                        key="digital_board_packs"
                         showFullDescription
-                        description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+                        description="Compile and distribute secure digital board materials."
                         icon={icons.activity}
                      >
-                        Usage Metrics
+                        Digital Board Packs
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="production_ready"
+                        key="task_tracking"
                         showFullDescription
-                        description="ACME runs on ACME, join us and others serving requests at web scale."
+                        description="Assign, track, and manage action items and resolutions."
                         icon={icons.flash}
                      >
-                        Production Ready
+                        Task Tracking
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="99_uptime"
+                        key="meeting_minutes"
                         showFullDescription
-                        description="Applications stay on the grid with high availability and high uptime guarantees."
+                        description="Automated minutes creation with approval workflows."
                         icon={icons.server}
                      >
-                        +99% Uptime
+                        Meeting Minutes
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="supreme_support"
+                        key="advanced_security"
                         showFullDescription
-                        description="Overcome any challenge with a supporting team ready to respond."
+                        description="Enterprise-grade encryption and access controls."
                         icon={icons.user}
                      >
-                        +Supreme Support
+                        Advanced Security
                      </Dropdown.Item>
                   </Dropdown.Menu>
                </Dropdown>
                <Navbar.Link isActive href="#">
-                  Customers
+                  Solutions
                </Navbar.Link>
                <Navbar.Link href="#">Pricing</Navbar.Link>
-               <Navbar.Link href="#">Company</Navbar.Link>
+               <Navbar.Link href="#">About Us</Navbar.Link>
             </Navbar.Content>
          </Navbar.Brand>
 
@@ -145,7 +145,7 @@ export const Nav = () => {
                      minWidth: '100%',
                   }}
                   target="_blank"
-                  href="https://github.com/Siumauricio/landing-template-nextui"
+                  href="#"
                >
                   <GithubIcon />
                </Link>
@@ -164,7 +164,7 @@ export const Nav = () => {
 
             <Navbar.Item>
                <Button auto flat href="#">
-                  Start free trial
+                  Request a Demo
                </Button>
             </Navbar.Item>
             <Navbar.Item hideIn={'xs'}>
@@ -174,7 +174,7 @@ export const Nav = () => {
                      minWidth: '100%',
                   }}
                   target="_blank"
-                  href="https://github.com/Siumauricio/landing-template-nextui"
+                  href="#"
                >
                   <GithubIcon />
                </Link>

@@ -20,7 +20,7 @@ export const Statistics = () => {
                      textAlign: 'center',
                   }}
                >
-                  Over 8000+ projects completed
+                  Trusted by board members worldwide
                </Text>
                <Text
                   span
@@ -29,9 +29,7 @@ export const Statistics = () => {
                      textAlign: 'center',
                   }}
                >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto provident omnis deleniti temporibus pariatur corporis
-                  aperiam
+                  BoardHub delivers measurable improvements in board efficiency, security, and governance
                </Text>
             </Flex>
             <Flex
@@ -48,34 +46,26 @@ export const Statistics = () => {
             >
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     $500K+
+                     98%
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Revenue
+                     Reduction in meeting preparation time
                   </Text>
                </Flex>
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     10+
+                     100%
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Products
+                     Secure document management
                   </Text>
                </Flex>
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     $150+
+                     45%
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Components
-                  </Text>
-               </Flex>
-               <Flex direction={'column'}>
-                  <Text h2 css={{color: '$blue600'}}>
-                     10+
-                  </Text>
-                  <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Employees
+                     Increase in governance efficiency
                   </Text>
                </Flex>
             </Flex>

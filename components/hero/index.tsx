@@ -43,7 +43,7 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     The modern landing page{' '}
+                     Streamline Your Board Meetings{' '}
                   </Text>
                   <Text
                      h1
@@ -51,7 +51,7 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     for{' '}
+                     with{' '}
                   </Text>
                   <Text
                      h1
@@ -60,7 +60,7 @@ export const Hero = () => {
                      }}
                      color="primary"
                   >
-                     React developers
+                     BoardHub
                   </Text>
                </Box>
 
@@ -72,8 +72,7 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  The easiest way to build React Landing page in seconds. Save
-                  time and focus on your project.
+                  A secure, all-in-one solution for board meeting management that enhances governance, improves collaboration, and simplifies compliance.
                </Text>
 
                <Flex
@@ -83,8 +82,8 @@ export const Hero = () => {
                   }}
                   wrap={'wrap'}
                >
-                  <Input placeholder="Enter your email address" size="lg" />
-                  <Button>Start Free Trial</Button>
+                  <Button>Request a Demo</Button>
+                  <Button>Explore Features</Button>
                </Flex>
                <Flex
                   wrap={'wrap'}
@@ -102,7 +101,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> No credit card required.
+                     <CheckIcon /> Secure document management
                   </Flex>
                   <Flex
                      css={{
@@ -110,7 +109,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> 14-day free trial.
+                     <CheckIcon /> Improved governance
                   </Flex>
                   <Flex
                      css={{
@@ -118,7 +117,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> Cancel anytime.
+                     <CheckIcon /> Simplified compliance
                   </Flex>
                </Flex>
             </Box>

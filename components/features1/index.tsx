@@ -28,9 +28,9 @@ export const Features1 = () => {
          >
             <Flex direction="column">
                <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
+                  Key Features
                </Text>
-               <Text h3>Your title here</Text>
+               <Text h3>BoardHub delivers a comprehensive set of tools designed specifically for effective board management and governance</Text>
                <Text
                   span
                   css={{
@@ -38,10 +38,7 @@ export const Features1 = () => {
                      color: '$accents8',
                   }}
                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec tincidunt nisl lorem eu nunc. Sed euismod, nisl ut aliquam
-                  lacinia,
+                  Our integrated platform helps organizations streamline their board processes, enhance security, and improve decision-making.
                </Text>
 
                <Flex
@@ -53,7 +50,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+                        Agenda Management
                      </Text>
                      <Text
                         span
@@ -62,9 +59,7 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                        Create and manage meeting agendas with automated time tracking
                      </Text>
                   </Flex>
                </Flex>
@@ -77,7 +72,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+                        Digital Board Packs
                      </Text>
                      <Text
                         span
@@ -86,9 +81,7 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                        Compile and distribute secure digital board materials
                      </Text>
                   </Flex>
                </Flex>
@@ -101,7 +94,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+                        Task Tracking
                      </Text>
                      <Text
                         span
@@ -110,9 +103,7 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                        Assign, track, and manage action items and resolutions
                      </Text>
                   </Flex>
                </Flex>
