@@ -3,8 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Raft',
-  description: 'Building the future of banking',
+  title: 'BoardHub',
+  description: 'Organise and manage your board meetings with ease',
 };
 
 export default function RootLayout({
