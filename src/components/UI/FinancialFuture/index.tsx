@@ -15,7 +15,7 @@ import {
 import MaskText from '@/components/Common/MaskText';
 import { useIsMobile } from '../../../../libs/useIsMobile';
 import {
-  cardsInfo,
+  //cardsInfo,
   desktopHeaderPhrase,
   desktopParagraphPhrase,
   mobileHeaderPhrase,
@@ -44,7 +44,7 @@ const FinancialFuture = () => {
         </Header>
         <Content>
           <CardsColumn>
-            {cardsInfo.map((info, i) => (
+            {/*cardsInfo.map((info, i) => (
               <Card key={i}>
                 <SVGCtn>
                   <Image src={info.icon} alt="icon" />
@@ -54,7 +54,7 @@ const FinancialFuture = () => {
                   <MaskText phrases={new Array(info.details)} tag="p" />
                 </TextCtn>
               </Card>
-            ))}
+            ))*/}
           </CardsColumn>
           <StatsColumn>
             {stats.map((stat, i) => (

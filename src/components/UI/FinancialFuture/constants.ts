@@ -1,7 +1,4 @@
-import ic_arrows_right_left from '../../../../public/svgs/ic_arrows_right_left.svg';
-import ic_bars from '../../../../public/svgs/ic_bars.svg';
-
-export const cardsInfo = [
+/*export const cardsInfo = [
   {
     title: 'Streamlined Workflow',
     details:
@@ -14,7 +11,7 @@ export const cardsInfo = [
       'Gain clarity on board performance, voting patterns, and task completion with our intuitive dashboards.',
     icon: ic_bars,
   },
-];
+];*/
 
 export const stats = [
   {

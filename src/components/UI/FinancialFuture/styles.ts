@@ -122,42 +122,42 @@ export const TextCtn = styled.div`
 export const StatsColumn = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
   align-self: center;
 
   @media (max-width: 768px) {
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
   }
 
   @media (max-width: 480px) {
-    gap: 0.75rem;
+    gap: 1.5rem;
   }
 `;
 
 export const Stat = styled.div`
-  padding: 2rem;
-  border-radius: 1.5rem;
-  background: #111;
   text-align: center;
 
   h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+    line-height: 1;
   }
 
   p {
     font-size: 1.125rem;
     color: var(--link-color);
-    margin-top: 0.5rem;
+    line-height: 1.4;
+    font-weight: 400;
   }
 
   @media (max-width: 768px) {
-    padding: 1.25rem;
     h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
+      font-size: 3rem;
+      font-weight: 700;
     }
     p {
       font-size: 1rem;
@@ -165,9 +165,8 @@ export const Stat = styled.div`
   }
 
   @media (max-width: 480px) {
-    padding: 1rem;
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     p {
       font-size: 0.875rem;

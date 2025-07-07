@@ -48,7 +48,7 @@ export const Header = styled.header`
     margin-bottom: 5rem;
 
     h1 {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
     }
 
     p {
