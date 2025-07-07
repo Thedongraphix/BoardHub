@@ -42,6 +42,7 @@ export const LogoContainer = styled.div`
 export const BurgerMenu = styled.div`
   display: none;
   position: relative;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     display: block;
@@ -89,30 +90,35 @@ export const Nav = styled.div`
 
   @media (max-width: 768px) {
     position: absolute;
-    top: 60px;
+    top: 80px;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: flex-start;
-    right: 120px;
+    right: 80px;
     z-index: 3;
-    visibility: hidden;
     opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     &.active {
       opacity: 1;
       visibility: visible;
+      transform: translateY(0);
+    }
+
+    a {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0.5rem 0;
+      
+      &:hover {
+        color: var(--white);
+        opacity: 0.8;
+      }
     }
   }
-`;
-
-export const AbsoluteLinks = styled(Link)`
-  position: absolute;
-  top: 40px;
-  color: var(--link-color);
-  font-size: 1rem;
-  font-weight: 400;
 `;
 
 export const CallToActions = styled.div`
@@ -129,18 +135,14 @@ export const CallToActions = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 220px;
-    z-index: 3;
-    right: 50px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
-
-    &.active {
-      opacity: 1;
-      visibility: visible;
-    }
+    display: none;
   }
+`;
+
+export const AbsoluteLinks = styled(Link)`
+  position: absolute;
+  top: 40px;
+  color: var(--link-color);
+  font-size: 1rem;
+  font-weight: 400;
 `;
