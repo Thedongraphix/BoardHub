@@ -19,6 +19,7 @@ import {
 import raft_logo from '../../../../public/images/boardhublogo.png';
 import { GetStartedButton } from '@/components';
 import AnimatedLink from '@/components/Common/AnimatedLink';
+import ThemeToggle from '@/components/Common/ThemeToggle';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { links, mobileMenuVariants, mobileNavLinkVariants } from './constants';
@@ -93,6 +94,7 @@ const Header = () => {
         </Nav>
 
         <CallToActions>
+          <ThemeToggle />
           <GetStartedButton padding="0.5rem 0.75rem" />
         </CallToActions>
 
@@ -156,6 +158,7 @@ const Header = () => {
                   animate="open"
                   transition={{ delay: links.length * 0.1 }}
                 >
+                  <ThemeToggle />
                   <GetStartedButton padding="1rem 2rem" />
                 </MobileGetStarted>
               </MobileMenuContent>

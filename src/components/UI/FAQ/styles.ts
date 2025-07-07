@@ -43,28 +43,33 @@ export const AccordionItem = styled(motion.div)`
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-  border-bottom: 0.0625rem solid #3d3d3d;
+  border-bottom: 0.0625rem solid var(--border-color);
   overflow: hidden;
 `;
 
-export const Question = styled(motion.div)`
+export const Question = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
+  padding: 1rem 0;
 
-  @media (max-width: 768px) {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    gap: 1rem;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+
+  svg {
+    min-width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.3s ease;
+    color: var(--green);
   }
 `;
 
 export const Answer = styled(motion.div)`
-  color: var(--link-color);
+  color: var(--text-secondary);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;

@@ -114,7 +114,7 @@ export const MobileMenuOverlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(7, 6, 6, 0.98);
+  background: var(--overlay-bg);
   backdrop-filter: blur(20px);
   z-index: 1000;
   display: flex;
@@ -164,7 +164,7 @@ export const CloseButton = styled.button`
     position: absolute;
     width: 24px;
     height: 2px;
-    background: var(--white);
+    background: var(--text-primary);
     border-radius: 2px;
   }
 `;
@@ -180,7 +180,7 @@ export const MobileNavLinks = styled.div`
 `;
 
 export const MobileNavLink = styled.a`
-  color: var(--white);
+  color: var(--text-primary);
   font-size: 2.5rem;
   font-weight: 300;
   font-family: 'SF Pro Display', sans-serif;
@@ -219,6 +219,8 @@ export const MobileNavLink = styled.a`
 export const MobileGetStarted = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   padding-bottom: 2rem;
 
   div {

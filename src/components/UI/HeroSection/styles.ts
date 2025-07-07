@@ -25,13 +25,13 @@ export const Pill = styled.div`
   align-items: center;
   gap: 0.625rem;
   border-radius: 6.25rem;
-  border: 0.2px solid #989898;
-  background: rgba(255, 255, 255, 0.15);
+  border: 0.2px solid var(--pill-border);
+  background: var(--pill-bg);
   backdrop-filter: blur(10px);
   margin-bottom: 1rem;
 
   span {
-    color: var(--light-gray);
+    color: var(--text-secondary);
     font-size: 1rem;
     font-weight: 400;
   }

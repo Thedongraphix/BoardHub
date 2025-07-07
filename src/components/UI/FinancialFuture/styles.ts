@@ -68,7 +68,8 @@ export const Card = styled.div`
   gap: 1.5rem;
   padding: 2rem;
   border-radius: 1.5rem;
-  background: #111;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -83,7 +84,7 @@ export const SVGCtn = styled.div`
     width: 3.5rem;
     height: 3.5rem;
     object-fit: contain;
-    filter: brightness(0) invert(1);
+    filter: var(--icon-filter);
   }
 `;
 
@@ -92,10 +93,11 @@ export const TextCtn = styled.div`
     font-size: 1.75rem;
     font-weight: 500;
     margin-bottom: 0.75rem;
+    color: var(--text-primary);
   }
 
   p {
-    color: var(--link-color);
+    color: var(--text-secondary);
   }
 
   @media (max-width: 768px) {
