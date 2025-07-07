@@ -14,7 +14,28 @@ import {
 } from './styles';
 
 const ThemeToggle = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, mounted } = useTheme();
+  
+  // Don't render until theme is mounted to prevent hydration mismatch
+  if (!mounted) {
+    return (
+      <ToggleWrapper>
+        <ToggleButton
+          aria-label="Loading theme toggle"
+          style={{ opacity: 0.5, pointerEvents: 'none' }}
+        >
+          <ToggleTrack $isDark={true}>
+            <ToggleThumb $isDark={true}>
+              <IconWrapper $isDark={true}>
+                <MoonIcon />
+              </IconWrapper>
+            </ToggleThumb>
+          </ToggleTrack>
+        </ToggleButton>
+      </ToggleWrapper>
+    );
+  }
+
   const isDark = theme === 'dark';
 
   return (
