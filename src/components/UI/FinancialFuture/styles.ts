@@ -51,22 +51,9 @@ export const Header = styled.header`
 `;
 
 export const Content = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-
-  @media (max-width: 992px) {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  @media (max-width: 768px) {
-    gap: 2.5rem;
-  }
-
-  @media (max-width: 480px) {
-    gap: 2rem;
-  }
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;
 
 export const CardsColumn = styled.div`
@@ -121,18 +108,21 @@ export const TextCtn = styled.div`
 
 export const StatsColumn = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   align-self: center;
+  max-width: 1000px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     max-width: 100%;
   }
 
   @media (max-width: 480px) {
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 `;
 

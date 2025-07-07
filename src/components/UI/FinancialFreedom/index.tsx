@@ -5,9 +5,6 @@ import {
   Inner,
   Header,
   BannerCtn,
-  Edges,
-  Edge,
-  Title,
   BriefNote,
 } from './styles';
 import MaskText from '@/components/Common/MaskText';
@@ -21,7 +18,6 @@ import {
   desktopBriefNotePhrase,
   desktopHeaderPhrase,
   desktopParagraphPhrase,
-  edges,
   mobileBriefNotePhrase,
   mobileHeaderPhrase,
   mobileParagraphPhrase,
@@ -61,17 +57,6 @@ const FinancialFreedom = () => {
             )}
           </Div>
         </BannerCtn>
-        <Edges>
-          {edges.map((edge, i) => (
-            <Edge key={i}>
-              <Title>
-                <Image src={edge.icon} alt="icon" />
-                <MaskText phrases={new Array(edge.point)} tag="h3" />
-              </Title>
-              <MaskText phrases={new Array(edge.details)} tag="p" />
-            </Edge>
-          ))}
-        </Edges>
       </Inner>
       <BriefNote>
         {isMobile ? (
