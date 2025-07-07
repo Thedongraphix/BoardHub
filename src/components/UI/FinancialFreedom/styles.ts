@@ -59,7 +59,7 @@ export const Header = styled.header`
 `;
 
 export const BannerCtn = styled.div`
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   width: 100%;
   position: relative;
   width: 100%;

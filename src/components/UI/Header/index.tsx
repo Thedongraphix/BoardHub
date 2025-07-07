@@ -10,7 +10,7 @@ import {
   AbsoluteLinks,
   BurgerMenu,
 } from './styles';
-import raft_logo from '../../../../public/svgs/raft_logo.svg';
+import raft_logo from '../../../../public/images/boardhublogo.png';
 import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import { GetStartedButton } from '@/components';
 import AnimatedLink from '@/components/Common/AnimatedLink';
@@ -36,11 +36,21 @@ const Header = () => {
         </LogoContainer>
         <Nav className={isOpen ? 'active' : ''}>
           {links.map((link, i) => (
-            <AnimatedLink key={i} title={link.linkTo} />
+            <a 
+              key={i} 
+              href={link.url}
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector(link.url);
+                element?.scrollIntoView({ behavior: 'smooth' });
+                setIsOpen(false);
+              }}
+            >
+              <AnimatedLink title={link.linkTo} />
+            </a>
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
-          <AnimatedLink title="Login" />
           <GetStartedButton padding="0.5rem 0.75rem" />
         </CallToActions>
       </Inner>

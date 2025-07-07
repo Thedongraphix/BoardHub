@@ -15,7 +15,7 @@ import RevealCover from '@/components/Common/RevealCover';
 import { Div } from '../Featured/styles';
 import { imageVariants } from '../Featured';
 import { useIsMobile } from '../../../../libs/useIsMobile';
-import financial_freedom_banner from '../../../../public/images/financial_freedom_banner.png';
+import financial_freedom_banner from '../../../../public/images/dashboardimage.png';
 import freedom_mobile_banner from '../../../../public/images/freedom_mobile_banner.png';
 import {
   desktopBriefNotePhrase,

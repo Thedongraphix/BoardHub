@@ -3,11 +3,10 @@ import Link from 'next/link';
 import { styled } from 'styled-components';
 
 export const Wrapper = styled.section`
-  padding: 1rem 0;
-  border-bottom: 0.5px solid #3d3d3d;
+  padding: 0.5rem 0;
 
   @media (max-width: 768px) {
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
   }
 `;
 
@@ -21,11 +20,22 @@ export const Inner = styled.div`
 `;
 
 export const LogoContainer = styled.div`
+  img {
+    width: 12rem;
+    height: auto;
+    object-fit: contain;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    
+    img {
+      width: 9rem;
+      height: auto;
+    }
   }
 `;
 
@@ -39,9 +49,9 @@ export const BurgerMenu = styled.div`
 
     div {
       position: absolute;
-      background: var(--emerald);
-      width: '250px';
-      height: '300px';
+      background: var(--green);
+      width: 250px;
+      height: 300px;
       border-radius: 25px;
       z-index: 1;
       top: 50px;
@@ -51,6 +61,8 @@ export const BurgerMenu = styled.div`
       position: relative;
       z-index: 2;
       object-fit: cover;
+      width: 24px;
+      height: 24px;
     }
   }
 `;
@@ -64,8 +76,15 @@ export const Nav = styled.div`
 
   a {
     color: var(--link-color);
-    font-size: 1rem;
+    font-size: 1.75rem;
     font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--green);
+    }
   }
 
   @media (max-width: 768px) {

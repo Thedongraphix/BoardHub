@@ -1,23 +1,20 @@
 import Image from 'next/image';
-import raft_footer_logo from '../../../../public/svgs/raft_footer_logo.svg';
-import qr_code from '../../../../public/svgs/qr_code.svg';
-import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
-import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
+import boardhub_logo from '../../../../public/images/boardhublogo.png';
 import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
 const linksArr = [
   {
-    title: 'About us',
-    links: ['Our Company', 'Careers', 'Press kits'],
+    title: 'About Us',
+    links: ['About BoardHub', 'Careers', 'Media'],
   },
   {
     title: 'Legal',
-    links: ['Terms of use', 'Privacy policy', 'About us'],
+    links: ['Terms of Service', 'Privacy Policy', 'Security'],
   },
   {
-    title: 'About us',
-    links: ['Contact us', 'FAQ'],
+    title: 'Support',
+    links: ['Contact Us', 'FAQ', 'Help Center'],
   },
 ];
 
@@ -27,10 +24,6 @@ import {
   FooterLogo,
   FooterMainContent,
   FooterMiddle,
-  QRContainer,
-  QRImageCtn,
-  TextCtn,
-  IconCtn,
   FooterNavigation,
   GridColumn,
   LinksContainer,
@@ -44,22 +37,10 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={raft_footer_logo} alt="raft_footer_logo" />
+          <Image src={boardhub_logo} alt="boardhub_logo" />
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
-            <QRContainer>
-              <QRImageCtn>
-                <Image src={qr_code} alt="qr_code" />
-              </QRImageCtn>
-              <TextCtn>
-                <p>Scan to download App on the Playstore and Appstore.</p>
-                <IconCtn>
-                  <Image src={ic_google_playstore} alt="playstore icon" />
-                  <Image src={ic_baseline_apple} alt="apple icon" />
-                </IconCtn>
-              </TextCtn>
-            </QRContainer>
             <FooterNavigation>
               {linksArr.map((l, i) => (
                 <GridColumn key={i}>
@@ -80,7 +61,7 @@ const Footer = () => {
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Raft Corp, LLC.
+              BoardHub Corp, LLC.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

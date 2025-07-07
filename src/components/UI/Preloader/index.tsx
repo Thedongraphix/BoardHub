@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import ic_import from '../../../../public/svgs/ic_import.svg';
+import boardhub_logo from '../../../../public/images/boardhublogo.png';
 
 import { Wrapper, Inner, SecondOverlay } from './styles';
 import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
@@ -11,7 +11,7 @@ const Preloader = ({
 }: {
   setComplete: Dispatch<SetStateAction<boolean>>;
 }) => {
-  const word = ['R', 'a', 'f', 't'];
+  const word = ['B', 'o', 'a', 'r', 'd'];
 
   const spans = useRef<any>([]); // Create a ref to store the span elements
   const imageRef = useRef(null);
@@ -62,12 +62,12 @@ const Preloader = ({
     <>
       <Wrapper ref={wrapperRef}>
         <Inner>
-          <Image ref={imageRef} src={ic_import} alt="import icon" />
+          <Image ref={imageRef} src={boardhub_logo} alt="boardhub logo" />
           <div>
             {word.map((t, i) => (
               <div
                 key={i}
-                ref={(element) => (spans.current[i] = element)} // Assign ref to each span
+                ref={(element) => { spans.current[i] = element; }} // Assign ref to each span
               >
                 {t}
               </div>

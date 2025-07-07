@@ -1,47 +1,42 @@
-import seamless_payments from '../../../../public/images/seamless_payments.png';
-import smart_investing from '../../../../public/images/smart_investing.png';
-import wealth_management from '../../../../public/images/wealth_management.png';
-import financial_planning from '../../../../public/images/financial_planning.png';
+import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
+import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
+import ic_document_duplicate from '../../../../public/svgs/ic_document_duplicate.svg';
+import ic_identification from '../../../../public/svgs/ic_identification.svg';
+
 // For desktop
-export const desktopHeaderPhrases = [
-  'Elevate Your Financial',
-  'Journey with RAFT',
-];
+export const desktopHeaderPhrases = ['Key Features of BoardHub'];
 export const desktopParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From investments to payments,',
-  "we've got you covered. Join us and unlock your potential today.",
+  'BoardHub provides a comprehensive suite of features to streamline board meetings and improve governance.',
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From',
-  "investments to payments, we've got you covered.",
-  'Join us and unlock your potential today.',
+  'BoardHub provides a comprehensive suite of features to streamline board meetings and improve governance.',
 ];
 
 export const offers = [
   {
-    illustration: seamless_payments,
-    title: 'Seamless Payments',
+    illustration: ic_lock_closed,
+    title: 'Security by Design',
     details:
-      'Enjoy secure, seamless transactions that make managing your money a breeze.',
+      'Military-grade encryption and robust security controls to protect your data and ensure privacy.',
   },
   {
-    illustration: smart_investing,
-    title: 'Smart Investing',
+    illustration: ic_circle_stack,
+    title: 'Flexible Meeting Management',
     details:
-      'Grow your wealth confidently with our personalized investment solutions, tailored to your financial goals.',
+      'Optimize your entire meeting workflow, from creating agendas and sharing meeting packs to managing attendance and holding votes.',
   },
   {
-    illustration: wealth_management,
-    title: 'Wealth Management',
+    illustration: ic_document_duplicate,
+    title: 'Paperless Collaboration',
     details:
-      'Make informed decisions for your financial future with our wealth management expertise.',
+      'View, update, and sign documents in real-time on any device, eliminating the need for printed materials.',
   },
   {
-    illustration: financial_planning,
-    title: 'Financial Planning',
+    illustration: ic_identification,
+    title: 'Complete Transparency',
     details:
-      'Achieve your financial dreams with our comprehensive financial planning services, guiding you toward a secure future.',
+      'Board members have 24/7 access to agendas, meeting minutes, approvals, and archives from any device.',
   },
 ];

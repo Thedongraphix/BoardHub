@@ -1,18 +1,16 @@
 'use client';
 import Image from 'next/image';
-import future_banner from '../../../../public/images/future_banner.png';
-import future_mobile_banner from '../../../../public/images/future_mobile_banner.png';
 import {
   Wrapper,
   Inner,
   Header,
-  CardContainer,
+  Content,
+  CardsColumn,
   Card,
   TextCtn,
   SVGCtn,
-  Stats,
+  StatsColumn,
   Stat,
-  Banner,
 } from './styles';
 import MaskText from '@/components/Common/MaskText';
 import { useIsMobile } from '../../../../libs/useIsMobile';
@@ -44,35 +42,30 @@ const FinancialFuture = () => {
             </>
           )}
         </Header>
-        <CardContainer>
-          {cardsInfo.map((info, i) => (
-            <Card key={i}>
-              <TextCtn>
-                <MaskText phrases={new Array(info.title)} tag="h3" />
-                <MaskText phrases={new Array(info.details)} tag="p" />
-              </TextCtn>
-              <SVGCtn>
-                <Image src={info.icon} alt="icon" />
-              </SVGCtn>
-            </Card>
-          ))}
-        </CardContainer>
-        <Stats>
-          {stats.map((stat, i) => (
-            <Stat key={i}>
-              <MaskText phrases={new Array(stat.number)} tag="h1" />
-              <MaskText phrases={new Array(stat.subtitle)} tag="p" />
-            </Stat>
-          ))}
-        </Stats>
+        <Content>
+          <CardsColumn>
+            {cardsInfo.map((info, i) => (
+              <Card key={i}>
+                <SVGCtn>
+                  <Image src={info.icon} alt="icon" />
+                </SVGCtn>
+                <TextCtn>
+                  <MaskText phrases={new Array(info.title)} tag="h3" />
+                  <MaskText phrases={new Array(info.details)} tag="p" />
+                </TextCtn>
+              </Card>
+            ))}
+          </CardsColumn>
+          <StatsColumn>
+            {stats.map((stat, i) => (
+              <Stat key={i}>
+                <MaskText phrases={new Array(stat.number)} tag="h1" />
+                <MaskText phrases={new Array(stat.subtitle)} tag="p" />
+              </Stat>
+            ))}
+          </StatsColumn>
+        </Content>
       </Inner>
-      <Banner>
-        {isMobile ? (
-          <Image src={future_mobile_banner} alt="future_banner" fill />
-        ) : (
-          <Image src={future_banner} alt="future_banner" fill />
-        )}
-      </Banner>
     </Wrapper>
   );
 };

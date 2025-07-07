@@ -37,7 +37,7 @@ const FAQ = () => {
   const isMobile = useIsMobile();
 
   return (
-    <Wrapper>
+    <Wrapper id="faq">
       <Inner>
         {isMobile ? (
           <MaskText phrases={mobileHeaderPhrase} tag="h1" />

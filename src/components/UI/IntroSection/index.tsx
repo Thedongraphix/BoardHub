@@ -1,19 +1,15 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Edge, Edges, Title } from '../FinancialFreedom/styles';
-import lola_card from '../../../../public/images/lola_card.png';
-import orange_card from '../../../../public/images/orange_card.png';
-import terry_card from '../../../../public/images/terry_card.png';
 import {
   Wrapper,
   Inner,
   Header,
   HeaderMainText,
   CardsContainer,
-  LeftImage,
-  MiddleImage,
-  RightImage,
+  ModernCard,
+  CardHeader,
+  CardContent,
 } from './styles';
 import { MaskText } from '@/components';
 import { useIsMobile } from '../../../../libs/useIsMobile';
@@ -28,9 +24,16 @@ import {
 const IntroSection = () => {
   const isMobile = useIsMobile();
   const [isHovered, setIsHovered] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
+
+  const handleCardClick = () => {
+    if (isMobile) {
+      setIsActive(!isActive);
+    }
+  };
 
   return (
-    <Wrapper>
+    <Wrapper id="why-choose-us">
       <Inner>
         <Header>
           <h3>Introducing</h3>
@@ -48,35 +51,47 @@ const IntroSection = () => {
             )}
           </HeaderMainText>
         </Header>
-        <CardsContainer>
-          <LeftImage
-            className={isHovered ? 'active' : ''}
-            src={orange_card}
-            alt="orange_atm_card"
-          />
-          <MiddleImage
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            src={lola_card}
-            alt="blue card"
-          />
-          <RightImage
-            className={isHovered ? 'active' : ''}
-            src={terry_card}
-            alt="terry card"
-          />
+        <CardsContainer
+          onMouseEnter={() => !isMobile && setIsHovered(true)}
+          onMouseLeave={() => !isMobile && setIsHovered(false)}
+          onClick={handleCardClick}
+        >
+          <ModernCard
+            className={(isMobile ? isActive : isHovered) ? 'active' : ''}
+            position="left"
+          >
+            <CardHeader>
+              <h3>{edges[0].point}</h3>
+            </CardHeader>
+            <CardContent>
+              <p>{edges[0].details}</p>
+            </CardContent>
+          </ModernCard>
+          
+          <ModernCard
+            className={(isMobile ? isActive : isHovered) ? 'active' : ''}
+            position="center"
+          >
+            <CardHeader>
+              <h3>{edges[1].point}</h3>
+            </CardHeader>
+            <CardContent>
+              <p>{edges[1].details}</p>
+            </CardContent>
+          </ModernCard>
+          
+          <ModernCard
+            className={(isMobile ? isActive : isHovered) ? 'active' : ''}
+            position="right"
+          >
+            <CardHeader>
+              <h3>{edges[2].point}</h3>
+            </CardHeader>
+            <CardContent>
+              <p>{edges[2].details}</p>
+            </CardContent>
+          </ModernCard>
         </CardsContainer>
-        <Edges>
-          {edges.map((edge, i) => (
-            <Edge key={i}>
-              <Title>
-                <Image src={edge.icon} alt="icon" />
-                <MaskText phrases={new Array(edge.point)} tag="h3" />
-              </Title>
-              <MaskText phrases={new Array(edge.details)} tag="p" />
-            </Edge>
-          ))}
-        </Edges>
       </Inner>
     </Wrapper>
   );

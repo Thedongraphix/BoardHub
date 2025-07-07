@@ -26,8 +26,9 @@ export const Inner = styled.div`
   height: 20em;
 
   img {
-    width: 25em;
-    height: 25em;
+    width: 15em;
+    height: auto;
+    object-fit: contain;
   }
 
   div {
@@ -45,8 +46,9 @@ export const Inner = styled.div`
     gap: 1rem;
     height: 13rem;
     img {
-      width: 7rem;
-      height: 100%;
+      width: 5rem;
+      height: auto;
+      object-fit: contain;
     }
 
     div {

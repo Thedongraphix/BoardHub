@@ -19,12 +19,16 @@ export const Inner = styled.main`
 `;
 
 export const FooterLogo = styled.div`
+  img {
+    width: 10rem;
+    height: auto;
+    object-fit: contain;
+  }
+
   @media (max-width: 768px) {
-    width: 13.2rem;
-    height: 5.6rem;
     img {
-      width: 100%;
-      height: 100%;
+      width: 8rem;
+      height: auto;
       object-fit: contain;
     }
   }
@@ -50,44 +54,10 @@ export const FooterMiddle = styled.div`
   }
 `;
 
-export const QRContainer = styled.div`
-  display: flex;
-  gap: 0.75rem;
-  padding: 1.25rem 1rem;
-  gap: 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px dashed var(--White, #fff);
-`;
-
-export const QRImageCtn = styled.div``;
-
-export const TextCtn = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  p {
-    max-width: 19.5625rem;
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
-
-  @media (max-width: 768px) {
-    p {
-      font-size: 1rem;
-    }
-  }
-`;
-
-export const IconCtn = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-`;
-
 export const FooterNavigation = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;

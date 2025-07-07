@@ -8,8 +8,8 @@ export const GlobalStyles = styled.createGlobalStyle`
     --white: #fff;
     --light-gray: #dcdcdc;
     --link-color: #bdbdbd;
-    --green: #2b892e;
-    --emerald: #48d64c;
+    --green: #3498db;
+    --emerald: #5dade2;
   }
 
   * {

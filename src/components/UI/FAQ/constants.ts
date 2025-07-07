@@ -3,8 +3,8 @@ type FAQItem = {
   answer: string;
 };
 
-export const desktopHeaderPhrase = ['Frequently asked', 'questions'];
-export const mobileHeaderPhrase = ['Frequently', 'asked', 'questions'];
+export const desktopHeaderPhrase = ['Frequently Asked', 'Questions'];
+export const mobileHeaderPhrase = ['Frequently', 'Asked', 'Questions'];
 export const animate = {
   initial: {
     y: '100%',
@@ -19,23 +19,23 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'How do I create an account with RAFT?',
+    question: 'What is BoardHub?',
     answer:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'BoardHub is a secure digital platform designed to make board meetings more effective. It provides an easy-to-use interface for communication, strategic planning, policy management, and performance measurement for boards and their members.',
   },
   {
-    question: 'How does RAFT ensure the security of my financial data?',
+    question: 'Is my data secure on BoardHub?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Yes, security is at the heart of BoardHub. We implement military-grade encryption and other advanced security controls to protect your data and ensure your privacy while using the platform.',
   },
   {
-    question: 'What types of transactions can I perform with RAFT?',
+    question: 'Who can benefit from using BoardHub?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'BoardHub is designed for a wide range of users involved in board activities, including Board Directors, Executives, Committee Members, Company Secretaries, and Meeting Organizers.',
   },
   {
-    question: 'What benefits does RAFT offer for wealth management?',
+    question: 'Can I use BoardHub on my mobile device?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Absolutely. BoardHub is designed to be accessible anywhere, anytime, on any device. You can view, update, and sign documents in real-time on your phone or tablet without needing to print.',
   },
 ];

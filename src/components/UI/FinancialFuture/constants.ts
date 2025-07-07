@@ -1,57 +1,50 @@
-import ic_money_send from '../../../../public/svgs/ic_money_send.svg';
-import ic_wallet_minus from '../../../../public/svgs/ic_wallet_minus.svg';
+import ic_arrows_right_left from '../../../../public/svgs/ic_arrows_right_left.svg';
+import ic_bars from '../../../../public/svgs/ic_bars.svg';
+
 export const cardsInfo = [
   {
-    title: 'Spend Better',
+    title: 'Streamlined Workflow',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
-    icon: ic_money_send,
+      'From agenda creation to minutes archival, every step of your meeting process is simplified and accessible in one place.',
+    icon: ic_arrows_right_left,
   },
   {
-    title: 'Invest Better',
+    title: 'Actionable Insights',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
-    icon: ic_wallet_minus,
+      'Gain clarity on board performance, voting patterns, and task completion with our intuitive dashboards.',
+    icon: ic_bars,
   },
 ];
 
 export const stats = [
   {
-    number: '50+',
-    subtitle: 'cities',
+    number: '100%',
+    subtitle: 'Paperless Meetings',
   },
   {
-    number: '50,000+',
-    subtitle: 'transactions',
+    number: '24/7',
+    subtitle: 'Platform Access',
   },
   {
-    number: '3M+',
-    subtitle: 'users',
+    number: 'Secure',
+    subtitle: 'By Design',
   },
   {
-    number: '5+',
-    subtitle: 'user ratings',
+    number: 'Seamless',
+    subtitle: 'Integrations',
   },
 ];
 
 // For desktop
-export const desktopHeaderPhrase = [
-  'Confidently Shape Your',
-  'Financial Future',
-];
+export const desktopHeaderPhrase = ['A Better Way to Manage', 'Your Board'];
 export const desktopParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape your financial future. Our modern',
-  'approach simplifies saving and investing, making it easier than ever.',
+  'BoardHub helps boards, committees, and administrators work more effectively',
+  'and securely.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = [
-  'Confidently Shape',
-  ' Your Financial Future',
-];
+export const mobileHeaderPhrase = ['A Better Way to', 'Manage Your Board'];
 export const mobileParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape',
-  'your financial future. Our modern approach',
-  'simplifies saving and investing, making it easier',
-  'than ever.',
+  'BoardHub helps boards, committees, and',
+  'administrators work more effectively and securely.',
 ];

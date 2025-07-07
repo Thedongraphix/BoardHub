@@ -1,41 +1,38 @@
-import ic_document_duplicate from '../../../../public/svgs/ic_document_duplicate.svg';
+import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
 import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Introducing RAFT's Next-", 'Gen Cards'];
+export const desktopHeaderPhrase = ['Why Choose BoardHub?'];
 export const desktopParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards. Elevate your banking",
-  'experience with cutting-edge features, security, and unprecedented',
-  'convenience.',
+  'BoardHub is the smart choice for organizations looking to improve board',
+  'governance, streamline meetings, and enhance collaboration.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing RAFT's", 'Next-Gen Cards'];
+export const mobileHeaderPhrase = ['Why Choose', 'BoardHub?'];
 export const mobileParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards.",
-  ' Elevate your banking experience with cutting-edge',
-  'features, security, and unprecedented',
-  'convenience.',
+  'BoardHub is the smart choice for organizations looking to improve',
+  'board governance, streamline meetings, and enhance collaboration.',
 ];
 
 export const edges = [
   {
-    point: 'Contactless Technology',
+    point: 'Enterprise-Grade Security',
     details:
-      'Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.',
-    icon: ic_document_duplicate,
-  },
-  {
-    point: 'Personalization',
-    details:
-      'Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.',
-    icon: ic_identification,
-  },
-  {
-    point: 'Enhanced Security',
-    details:
-      'Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.',
+      'Bank-level encryption and advanced security protocols ensure your sensitive board data remains protected. SOC 2 compliant with comprehensive audit trails.',
     icon: ic_lock_closed,
+  },
+  {
+    point: 'Intelligent Automation',
+    details:
+      'AI-powered insights and automated workflows streamline meeting preparation, decision tracking, and governance reporting for maximum efficiency.',
+    icon: ic_circle_stack,
+  },
+  {
+    point: 'Global Accessibility',
+    details:
+      'Access your board materials anywhere, anytime. Multi-device synchronization with offline capabilities ensures uninterrupted productivity.',
+    icon: ic_identification,
   },
 ];

@@ -1,56 +1,51 @@
-
-import ic_banknotes from '../../../../public/svgs/ic_banknotes.svg';
-import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
-import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.svg';
+import ic_money_send from '../../../../public/svgs/ic_money_send.svg';
+import ic_bars from '../../../../public/svgs/ic_bars.svg';
+import ic_identification from '../../../../public/svgs/ic_identification.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ['Your Financial Freedom,', 'Your Way'];
+export const desktopHeaderPhrase = ['Enhanced Board Performance'];
 export const desktopParagraphPhrase = [
-  'We believe that managing your finances should be effortless and cost-effective.',
-  "That's why we offer you the freedom you deserve.",
+  'BoardHub is designed to improve board performance by providing powerful tools',
+  'for collaboration and data-driven insights.',
 ];
 export const desktopBriefNotePhrase = [
-  'Smart investments,',
-  'secure payments, and',
-  'expert guidance, all in',
-  'one place.',
+  'Empowering boards with the',
+  'tools they need to succeed.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Your Financial', 'Freedom, Your Way'];
+export const mobileHeaderPhrase = ['Enhanced Board', 'Performance'];
 export const mobileParagraphPhrase = [
-  'We believe that managing your finances should be',
-  "effortless and cost-effective. That's why we offer",
-  ' you the freedom you deserve.',
+  'BoardHub is designed to improve board performance by providing',
+  'powerful tools for collaboration and data-driven insights.',
 ];
 
 export const mobileBriefNotePhrase = [
-  'Smart',
-  ' investments,',
-  'secure',
-  ' payments,',
-  'and expert',
-  'guidance, all',
-  'in one place.',
+  'Empowering boards',
+  'with the tools they',
+  'need to succeed.',
 ];
 
 export const edges = [
   {
-    point: 'No minimum balance fees',
+    point: 'Visibility & Insights',
     details:
-      'Say goodbye to minimum balance fees. Your account, your balance—no hidden charges',
-    icon: ic_banknotes,
+      'Built-in dashboards provide an overview of board performance, voting results, minutes, and tasks, enabling data-driven decisions.',
+    icon: ic_bars,
   },
+
   {
-    point: 'No monthly fees',
+    point: 'Who Benefits from BoardHub?',
     details:
-      'Bank with us without worrying about monthly fees. Keep more of your money where it belongs—in your account',
-    icon: ic_circle_stack,
+      'Board directors, Executives, Committee members, Company Secretaries, and Meeting Organizers all benefit from a more streamlined and efficient process.',
+    icon: ic_identification,
   },
+  
   {
-    point: 'No bank transfer fees',
+    point: 'Who Benefits from BoardHub?',
     details:
-      'Seamlessly transfer funds without the extra cost. Send and receive money with zero bank transfer fees.',
-    icon: ic_arrows_left_right,
+      'Board directors, Executives, Committee members, Company Secretaries, and Meeting Organizers all benefit from a more streamlined and efficient process.',
+    icon: ic_identification,
   },
+  
 ];

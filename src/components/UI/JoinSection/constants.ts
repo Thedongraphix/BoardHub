@@ -7,39 +7,31 @@ export type Props = {
   testimony: string;
   person: string;
   avatar: StaticImageData;
+  role: string;
 };
 
-export const testimonials = [
+export const testimonials: Props[] = [
   {
     testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
+      'BoardHub has revolutionized how our board operates. The platform is intuitive, secure, and has made our meetings significantly more efficient. The ability to access all materials in one place is a game-changer.',
+    person: 'Jane Doe',
     avatar: robert_fox,
+    role: 'Board Director',
   },
   {
     testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
+      'As a company secretary, BoardHub has saved me countless hours. Scheduling meetings, distributing materials, and managing minutes has never been easier. The platform is robust and reliable.',
+    person: 'John Smith',
     avatar: cameron_williamson,
+    role: 'Company Secretary',
   },
   {
     testimony:
-      "RAFT's financial planning services have been a lifeline for me. I always struggled with managing my money, but their team crafted a tailored plan that addressed my goals and concerns. It's been a game-changer in achieving my financial dreams",
-    person: 'Esther Howard',
+      "The insights we gain from BoardHub are invaluable. The dashboards provide a clear overview of our board's performance, helping us to make more strategic, data-driven decisions. Highly recommended!",
+    person: 'Sam Wilson',
     avatar: esther_howard,
-  },
-  {
-    testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
-    avatar: cameron_williamson,
-  },
-  {
-    testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
-    avatar: robert_fox,
+    role: 'Executive',
   },
 ];
 
-export const desktopHeaderPhrase = ['Join over 3 million', 'members'];
+export const desktopHeaderPhrase = ['Trusted by Boards and', 'Administrators'];

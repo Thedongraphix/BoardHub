@@ -10,5 +10,5 @@ export const LinkTo = styled(Link)`
   background: var(--green);
   color: var(--white);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 `;
