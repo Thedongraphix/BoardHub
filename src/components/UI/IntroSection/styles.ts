@@ -97,11 +97,7 @@ export const CardsContainer = styled.div`
   }
 `;
 
-
-
-
-
-export const ModernCard = styled.div<{ position?: string }>`
+export const ModernCard = styled.div<{ $position?: string }>`
   padding: 2.5rem;
   border-radius: 1.5rem;
   background: var(--green);
@@ -114,7 +110,7 @@ export const ModernCard = styled.div<{ position?: string }>`
   z-index: 5;
 
   ${props => {
-    switch (props.position) {
+    switch (props.$position) {
       case 'left':
         return `
           top: 50%;
@@ -156,7 +152,7 @@ export const ModernCard = styled.div<{ position?: string }>`
     background: rgba(52, 152, 219, 0.95);
     
     ${props => {
-      switch (props.position) {
+      switch (props.$position) {
         case 'left':
           return `
             &.active {
@@ -187,7 +183,7 @@ export const ModernCard = styled.div<{ position?: string }>`
     height: 200px;
     
     ${props => {
-      switch (props.position) {
+      switch (props.$position) {
         case 'left':
           return `
             &.active {

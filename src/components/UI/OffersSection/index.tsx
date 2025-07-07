@@ -107,7 +107,7 @@ const OffersSection = () => {
             {offers.map((_, index) => (
               <Indicator
                 key={index}
-                active={index === activeSlide}
+                $active={index === activeSlide}
                 onClick={() => handleIndicatorClick(index)}
               />
             ))}

@@ -1,24 +1,43 @@
-export const menu = {
+// Modern mobile menu animations
+export const mobileMenuVariants = {
   open: {
-    width: '250px',
-    height: '300px',
-    top: '-25px',
-    right: '-25px',
-    transition: { duration: 0.5, type: 'tween', ease: [0.25, 0.46, 0.45, 0.94] },
-  },
-
-  closed: {
-    width: '55px',
-    height: '40px',
-    top: '0px',
-    right: '-4px',
+    opacity: 1,
     transition: {
       duration: 0.4,
-      type: 'tween',
+      ease: [0.25, 0.46, 0.45, 0.94],
+      staggerChildren: 0.1,
+    },
+  },
+  closed: {
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+      ease: [0.25, 0.46, 0.45, 0.94],
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
+  },
+};
+
+export const mobileNavLinkVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      duration: 0.3,
       ease: [0.25, 0.46, 0.45, 0.94],
     },
   },
 };
+
 export const links = [
   {
     url: '#features',

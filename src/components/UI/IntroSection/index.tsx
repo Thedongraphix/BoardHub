@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 import {
   Wrapper,
@@ -20,11 +20,23 @@ import {
   mobileHeaderPhrase,
   mobileParagraphPhrase,
 } from './constants';
+import { useInView } from 'framer-motion';
 
 const IntroSection = () => {
   const isMobile = useIsMobile();
   const [isHovered, setIsHovered] = useState<boolean>(false);
   const [isActive, setIsActive] = useState<boolean>(false);
+  
+  // Auto-trigger cards when section comes into view
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { 
+    once: true, 
+    amount: 0.3,
+    margin: "-100px 0px"
+  });
+
+  // Auto-open cards when in view (especially for mobile)
+  const shouldShowCards = isMobile ? (isActive || isInView) : (isHovered || isInView);
 
   const handleCardClick = () => {
     if (isMobile) {
@@ -33,7 +45,7 @@ const IntroSection = () => {
   };
 
   return (
-    <Wrapper id="why-choose-us">
+    <Wrapper id="why-choose-us" ref={sectionRef}>
       <Inner>
         <Header>
           <h3>Introducing</h3>
@@ -57,8 +69,8 @@ const IntroSection = () => {
           onClick={handleCardClick}
         >
           <ModernCard
-            className={(isMobile ? isActive : isHovered) ? 'active' : ''}
-            position="left"
+            className={shouldShowCards ? 'active' : ''}
+            $position="left"
           >
             <CardHeader>
               <h3>{edges[0].point}</h3>
@@ -69,8 +81,8 @@ const IntroSection = () => {
           </ModernCard>
           
           <ModernCard
-            className={(isMobile ? isActive : isHovered) ? 'active' : ''}
-            position="center"
+            className={shouldShowCards ? 'active' : ''}
+            $position="center"
           >
             <CardHeader>
               <h3>{edges[1].point}</h3>
@@ -81,8 +93,8 @@ const IntroSection = () => {
           </ModernCard>
           
           <ModernCard
-            className={(isMobile ? isActive : isHovered) ? 'active' : ''}
-            position="right"
+            className={shouldShowCards ? 'active' : ''}
+            $position="right"
           >
             <CardHeader>
               <h3>{edges[2].point}</h3>

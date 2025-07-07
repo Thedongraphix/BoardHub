@@ -152,18 +152,19 @@ export const SlideIndicators = styled.div`
   }
 `;
 
-export const Indicator = styled.div<{ active?: boolean }>`
+export const Indicator = styled.div<{ $active?: boolean }>`
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
-  background: ${props => props.active ? 'var(--green)' : 'rgba(189, 189, 189, 0.3)'};
+  background: ${props => props.$active ? 'var(--green)' : 'rgba(189, 189, 189, 0.3)'};
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${props => props.active ? 'var(--green)' : 'rgba(189, 189, 189, 0.6)'};
+    background: ${props => props.$active ? 'var(--green)' : 'rgba(189, 189, 189, 0.6)'};
     transform: scale(1.2);
-  }`;
+  }
+`;
 
 export const NavButton = styled.button`
   background: transparent;

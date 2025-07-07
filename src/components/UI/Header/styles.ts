@@ -43,27 +43,23 @@ export const BurgerMenu = styled.div`
   display: none;
   position: relative;
   cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
 
   @media (max-width: 768px) {
-    display: block;
-    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 24px;
+    height: 24px;
 
-    div {
-      position: absolute;
-      background: var(--green);
-      width: 250px;
-      height: 300px;
-      border-radius: 25px;
-      z-index: 1;
-      top: 50px;
-    }
-
-    img {
-      position: relative;
-      z-index: 2;
-      object-fit: cover;
+    span {
       width: 24px;
-      height: 24px;
+      height: 2px;
+      background: var(--green);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: center;
     }
   }
 `;
@@ -89,35 +85,7 @@ export const Nav = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 80px;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
-    right: 80px;
-    z-index: 3;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    &.active {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    a {
-      color: var(--white);
-      font-size: 1.2rem;
-      font-weight: 500;
-      padding: 0.5rem 0;
-      
-      &:hover {
-        color: var(--white);
-        opacity: 0.8;
-      }
-    }
+    display: none;
   }
 `;
 
@@ -136,6 +104,128 @@ export const CallToActions = styled.div`
 
   @media (max-width: 768px) {
     display: none;
+  }
+`;
+
+// Modern Mobile Menu Styles
+export const MobileMenuOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(7, 6, 6, 0.98);
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const MobileMenuContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+`;
+
+export const MobileMenuHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  img {
+    width: 8rem;
+    height: auto;
+  }
+`;
+
+export const CloseButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  span {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+  }
+`;
+
+export const MobileNavLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+`;
+
+export const MobileNavLink = styled.a`
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: 'SF Pro Display', sans-serif;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--green);
+    transform: translateX(10px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 60%;
+    height: 2px;
+    background: var(--green);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+export const MobileGetStarted = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+
+  div {
+    span {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
   }
 `;
 
