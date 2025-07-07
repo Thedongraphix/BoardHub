@@ -80,36 +80,54 @@ export const BannerCtn = styled.div`
 export const Edges = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 4rem;
+  width: 100%;
+  max-width: 800px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
   }
 `;
 
 export const Edge = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.62rem;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
 
   p {
-    max-width: 26rem;
     color: var(--link-color);
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
+    margin: 0;
   }
 `;
 
 export const Title = styled.div`
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.8;
+  }
 
   h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    line-height: 1;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
   }
 `;
 
